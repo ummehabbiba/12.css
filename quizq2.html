@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>jQuery Display Image on Button Click</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$('.showbtn').click(function(){
+   		$('.myimgdivshowhide').show();
+	});
+  	$('.hidebtn').click(function(){
+   		$('.myimgdivshowhide').hide();
+	});
+});
+</script>
+<style>
+.myimgdivshowhide{
+	display:none;
+}
+</style>
+</head>
+<body>
+<h2>jQuery Display Image on Button Click</h2>
+<div class="myimgdivshowhide">
+	<img src="pic2 (1).png" alt="display image on button click" class="img-responsive img-thumbnail"/>
+</div>
+<button type="button" class="showbtn">Show Image</button>  
+<button type="button" class="hidebtn">Hide Image</button>
+<button type="button" class="togglebtn">Toggle Image</button>
+<div class="myimgdivtoggle">
+	<img src="pic2 (2).png" alt="display image on button click" class="img-responsive img-thumbnail"/>
+</div>
+
+<table id="choose-address-table" class="ui-widget ui-widget-content">
+    <thead>
+        <tr>
+              
+            <td><input type="submit" name="submit" value="education"></td>
+            <td><input type="reset" name="reset" value="personal info"></td>
+            <td><input type="reset" name="reset" value="experience"></td>
+            </tr>
+        <tr class="ui-widget-header ">
+            <th>Name/Nr.</th>
+            <th>Street</th>
+            <th>Town</th>
+            <th>Postcode</th>
+            <th>Country</th>
+            <th>Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="nr"><span>50</span>
+            </td>
+            <td>Some Street 1</td>
+            <td>Leeds</td>
+            <td>L0 0XX</td>
+            <td>United Kingdom</td>
+            <td>
+            
+        </tr>
+        <tr>
+            <td class="nr">49</td>
+            <td>Some Street 2</td>
+            <td>Lancaster</td>
+            <td>L0 0XX</td>
+            <td>United Kingdom</td>
+            <td>
+                
+            </td>
+        </tr>
+    
+    </tbody>
+</table>
+</body>
+</html>              
